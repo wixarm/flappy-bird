@@ -1,0 +1,71 @@
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: bold;
+  src: url("./eot/iranyekanwebboldfanum.eot");
+  src: url("./eot/iranyekanwebboldfanum.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */ url("./woff/iranyekanwebboldfanum.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("./ttf/iranyekanwebboldfanum.ttf")
+      format("truetype");
+}
+
+header {
+  margin: 0 auto;
+  width: 431px;
+}
+h1 {
+  background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png") 0% 340px;
+  padding: 1.2rem 0;
+  margin: 0;
+}
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 6px;
+  background: #5ee270;
+  font-weight: 900;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "iranyekan";
+  user-select: none;
+}
+
+#canvas {
+  height: 100%;
+  display: block;
+  margin: auto;
+  width: 431px;
+}
+
+@media only screen and (max-width: 768px) {
+  #canvas {
+    width: 100% !important;
+
+    .score-container {
+      width: 100%;
+    }
+  }
+
+  .title {
+    font-size: 24px;
+    text-align: center;
+    align-self: center;
+    margin-right: 50px;
+  }
+  .score-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 6px;
+    background: #5ee270;
+    padding-right: 50px;
+  }
+}
